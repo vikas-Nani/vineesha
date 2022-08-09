@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<title>Organization List</title>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+<link
+	href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold'
+	rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="style.css" type="text/css" media="screen"
+	title="Stylesheet" />
+</head>
+<style>
+h1 {
+	color: red;
+}
+;
+</style>
+<body>
+	<div class="split left">
+		<p>
+		<h1 align="center">Organization Details</h1>
+
+		<h3 align="center">“Quality means doing it right when no one is
+			looking.”</h3>
+		</p>
+		<h4 wicket:id="org" class="btn btn-info btn-lg">Add organization</h4>
+
+
+		<table align="center" border=1px class="table">
+			<thead>
+				<tr class="success">
+					<th>Organization Id</th>
+					<th>Organization Name</th>
+					<th>Organization Type</th>
+					<th>Organization Location</th>
+					<th>Operations</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr wicket:id="view">
+					<td wicket:id="c1"></td>
+					<td wicket:id="c2"></td>
+					<td wicket:id="c3"></td>
+					<td wicket:id="c4"></td>
+					<td wicket:id="mylink" class="btn btn-success btn-sm mb-3">details</td>
+					<td wicket:id="theirlink" class="btn btn-primary btn-sm mb-3">update</td>
+					<td wicket:id="urlink" class="btn btn-danger btn-sm mb-3">delete</td>
+				</tr>
+			</tbody>
+
+		</table>
+	</div>
+</body>
+</html>

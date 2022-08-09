@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+
+<title>Employee List</title>
+</head>
+<style>
+h1{
+	color: red;
+}
+h3 {
+	color: #000080;
+	 font-family: "Lucida Console", "Courier New", monospace;
+	
+	}
+;
+</style>
+<body>
+	<div class=container>
+		<h2 wicket:id="Hellolink" class="btn btn-primary btn-sm mb-3">Add
+			Employee</h2>
+		<p>
+		<h1 align="center">Employee Details</h1>
+		<h3 align="center" color:green>"Best People Always Tries To Give Their
+			Best."</h3>
+		</p>
+		<table align="center" border=1px>
+			<thead>
+				<th>Employee Id</th>
+				<th>Employee Name</th>
+				<th>Employee Team</th>
+				<th>Employee Role</th>
+				<th>operations</th>
+
+			</thead>
+			<tbody>
+				<tr wicket:id="view1">
+					<td wicket:id="e1"></td>
+					<td wicket:id="e2"></td>
+					<td wicket:id="e3"></td>
+					<td wicket:id="e4"></td>
+					<td wicket:id="updatelink" class="btn btn-primary btn-sm mb-3">update</td>
+					<td wicket:id="deletelink" class="btn btn-danger btn-sm mb-3">delete</td>
+				</tr>
+			</tbody>
+
+		</table>
+
+		<h4 wicket:id="homepage" class="btn btn-success btn-sm mb-3">go
+			to homepage</h4>
+	</div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Update Organization</title>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+	crossorigin="anonymous">
+</head>
+<style>
+h5 {
+	color: #000080;
+	font-family: "Lucida Console", "Courier New", monospace;
+}
+h6{
+color: red;
+	font-family: "Lucida Console", "Courier New", monospace;
+}
+;
+</style>
+<body>
+<h5>The Present details Are</h5>
+	<div class=container align="center">
+
+		<table border=1px>
+			<thead>
+				<tr>
+					<th>Organization id</th>
+					<th>Organization name</th>
+					<th>Organization Type</th>
+					<th>Location</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr wicket:id="ed">
+					<td wicket:id="g1"></td>
+					<td wicket:id="g2"></td>
+					<td wicket:id="g3"></td>
+					<td wicket:id="g4"></td>
+				</tr>
+			</tbody>
+
+		</table>
+
+	</div>
+	<div>
+		
+	</div>
+<h5>Enter the details to update</h5>
+<h6>"Note : Don't try to change Organization ID"</h6>
+	<div class=container align="center">
+		<form wicket:id="keep">
+			<table border=1px>
+				<tr>
+					<th>Orgnaization name</th>
+					<td><input wicket:id="oname"><br></td>
+				</tr>
+				<tr>
+					<th>Orgnaization type</th>
+					<td><input wicket:id="otype"><br></td>
+				</tr>
+				<tr>
+					<th>Location</th>
+					<td><input wicket:id="location"><br></td>
+				</tr>
+				
+					
+				
+			</table>
+			<input type="submit" value="save Modifications" class="btn btn-sm btn-primary mb-3">
+					<h5 wicket:id="c" class="btn btn-sm btn-danger mb-3">Cancel</h5>
+		</form>
+	</div>
+
+</body>
+</html>

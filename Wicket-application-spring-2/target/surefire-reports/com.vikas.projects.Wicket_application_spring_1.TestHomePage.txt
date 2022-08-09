@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.vikas.projects.Wicket_application_spring_1.TestHomePage
+-------------------------------------------------------------------------------
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
